@@ -10,8 +10,3 @@ class CreateSongs < ActiveRecord::Migration
     end
   end
 end
-
-expect(p.artist_sort_order.class).to eq String
-    expect(p.song_sort_order.class).to eq String
-    expect(p.allow_create_artists).to eq false
-    expect(p.allow_create_songs).to eq true
