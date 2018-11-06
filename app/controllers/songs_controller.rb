@@ -75,5 +75,9 @@ class SongsController < ApplicationController
   def song_params
     params.require(:song).permit(:title, :artist_name)
   end
+
+  def set_preferences
+    @preferences = Preference.first
+  end
 end
 
